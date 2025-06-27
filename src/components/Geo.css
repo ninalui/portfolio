@@ -1,0 +1,82 @@
+.geometric-orbit-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.geometric-center {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 28px;
+  height: 28px;
+  background: #f8d5e0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 16px #f4b6c2;
+  z-index: 2;
+}
+
+.geometric-orbit {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  animation: rotateOrbit 6s linear infinite;
+}
+
+.geometric-orbit.two {
+  width: 80px;
+  height: 80px;
+  animation-duration: 8s;
+  animation-direction: reverse;
+}
+
+.geometric-orbit.three {
+  width: 60px;
+  height: 60px;
+  animation-duration: 10s;
+}
+
+.geometric-circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: #b2d3c2;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px #b2d3c2;
+}
+
+.geometric-orbit.two .geometric-circle {
+  background: #f4b6c2;
+  box-shadow: 0 0 8px #f4b6c2;
+}
+
+.geometric-orbit.three .geometric-circle {
+  background: #e89ab5;
+  box-shadow: 0 0 8px #e89ab5;
+}
+
+@keyframes rotateOrbit {
+  0% { transform: translate(-50%, -50%) rotate(0deg);}
+  100% { transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+.geometric-polygon {
+  width: 60px;
+  aspect-ratio: 1;
+  background: #f8d5e0;
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  animation: rotatePolygon 4s linear infinite;
+  margin: 0 auto;
+}
+@keyframes rotatePolygon {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}

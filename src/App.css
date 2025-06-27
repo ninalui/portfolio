@@ -1,38 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 .App {
   text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background:
+    radial-gradient(circle at 80% 20%, #F8D5E0 0px, transparent 30%),
+    radial-gradient(circle at 20% 10%, #D6A4C2 0px, transparent 20%), 
+    radial-gradient(circle at 30% 70%, #B2D3C2 0px, transparent 40%),
+    radial-gradient(circle at 70% 30%, #F4B6C2 0px, transparent 90%),
+    radial-gradient(circle at 90% 80%, #A5C7B7 0px, transparent 60%), 
+    radial-gradient(circle at 5% 90%, #BFA2C8 0px, transparent 20%),
+    radial-gradient(circle at 10% 80%, #E89AB5 0px, transparent 90%);
+  background-color: #282C34;
+  background-blend-mode: overlay;
+  background-position: center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: moveCircle 12s ease-in-out infinite alternate;
+  z-index: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.hero-bg-circle.one {
+  width: 320px;
+  height: 320px;
+  background: #F8D5E0;
+  filter: blur(10px);
+  top: 30%;
+  left: 65%;
+  animation-delay: 0s;
+}
+
+.hero-bg-circle.two {
+  width: 200px;
+  height: 200px;
+  background: #B2D3C2;
+  opacity: 0.25;
+  filter: blur(10px);
+  top: 35%;
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.hero-bg-circle.three {
+  width: 225px;
+  height: 225px;
+  background: #F4B6C2;
+  filter: blur(10px);
+  top: 50%;
+  left: 65%;
+  animation-delay: 4s;
+}
+
+@keyframes moveCircle {
+  0%   { transform: translate(0, 0) scale(1);}
+  50%  { transform: translate(30px, -20px) scale(1.1);}
+  100% { transform: translate(-20px, 30px) scale(0.95);}
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+  will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Fade-in and slide-up animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: none;
   }
 }

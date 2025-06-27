@@ -1,0 +1,58 @@
+[
+  {
+    "name": "AI-Powered Lesson Plan Generator",
+    "description": "An AI-Powered web app that generates detailed, content-aligned lesson plans and materials. This tool was thoughtfull designed with real educator pain points in mind and backed by extensive market and domain research. Developed as part of a capstone project.",
+    "image": "/images/AI-LPG.png",
+    "link": "https://github.com/LucasYL/lesson_plan_generator",
+    "extralink": "https://capstone.vankhoury.dev/projects/33c1ae4b-9fb6-4e4f-b404-d82669487cb6",
+    "skills": [
+      "Python",
+      "Generative AI",
+      "Streamlit"
+    ]
+  },  
+  {
+    "name": "Pokémon Trading Card Scanner",
+    "description": "Create a digital Pokémon collection with ease. This app uses on-device computer vision to scan and identify cards, pulling information from the PokémonTCG API. It features a user-friendly interface for viewing and managing your collection. Developed during the Qualcomm x Microsoft AI on the Edge Hackathon and awarded third place.",
+    "image": "/images/TCG.png",
+    "link": "https://github.com/lo-calvin/Trading-Card-Scanner",
+    "skills": [
+      "Python",
+      "Computer Vision", 
+      "Streamlit"
+    ]
+  },
+  {
+    "name": "PupScout Mobile App",
+    "description": "A mobile app designed for dog lovers! Inspired by Dogspotting and Pokémon Go. This app features camera integration, location tracking, notifications, and breed identification, with Firebase for real-time data storage and user authentication.",
+    "image": "/images/PupScout.png",
+    "link": "https://github.com/ninalui/apps-final-project",
+    "skills": [
+      "React Native",
+      "Expo",
+      "Firebase",
+      "APIs"
+    ]
+  },
+  {
+    "name": "Virtual Pet",
+    "description": "Inspired by Tamagotchi, care for your virtual pet. This game was built using Java and Swing, allowing users to feed, play with, and care for their pet. This project focused on object-oriented design principles to implement interactive and engaging gameplay mechanics.",
+    "image": "/images/VirtualPet.png",
+    "link": "https://github.com/ninalui/VirtualPet",
+    "skills": [
+      "Java",
+      "Java Swing",
+      "OOD"
+    ]
+  },
+  {
+    "name": "Connect 4 + Minimax",
+    "description": "Implemented the Minimax algorithm with alpha-beta pruning, evaluation functions, and transposition tables to determine the optimal strategy for Connect 4. This project focused on optimizing algorithm performance and evaluating game states to predict the best moves efficiently.",
+    "image": "/images/connect4.png",
+    "skills": [
+      "Python",
+      "AI",
+      "Algorithm Design"
+    ]
+  }
+]
